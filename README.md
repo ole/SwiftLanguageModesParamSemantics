@@ -15,3 +15,35 @@ Testing how `swiftLanguageModes`/`swiftLanguageVersions` in SwiftPM behaves.
 2. Check out the `swiftLanguageModes`/`swiftLanguageVersions` argument in your chosen `Package.swift`. Comment in/out different values in the array to test different combinations.
 
 3. Run `swift run` to run the program. It will print both the compiler version and language mode with which it was compiled.
+
+## Results
+
+All of these were compiled with the Swift 6.1 compiler.
+
+### Package-4.2.swift
+
+```
+Swift compiler 6.0 or later
+Swift language mode 4
+```
+
+### Package-5.11.swift
+
+```
+Swift compiler 6.0 or later
+Swift language mode 5
+```
+
+### Package-6.0.swift with `swiftLanguageModes: [.v5]`
+
+```
+Swift compiler 6.0 or later
+Swift language mode 5
+```
+
+### Package-6.0.swift with `swiftLanguageModes: [.v5, .v6]`
+
+```
+Swift compiler 6.0 or later
+Swift language mode 6 or later
+```
