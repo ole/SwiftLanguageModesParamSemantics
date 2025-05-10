@@ -1,4 +1,4 @@
-// swift-tools-version:4.2
+// swift-tools-version:5.11
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "SwiftLanguageVersionsParamSemantics",
     targets: [
-        .target(name: "SwiftLanguageVersionsParamSemantics"),
+        .executableTarget(name: "SwiftLanguageVersionsParamSemantics"),
     ],
     // Comment out/in various language modes or combinations.
     // Observations:
@@ -15,9 +15,9 @@ let package = Package(
     //
     // Test this on the command line! Xcode 16.3 is very unreliable in detecting package manifest changes.
     swiftLanguageVersions: [
-        .v4,
+//        .v4,
 //        .v4_2,
-//        .version("5"),
+        .v5,
 //        .version("6"),
     ]
 )
